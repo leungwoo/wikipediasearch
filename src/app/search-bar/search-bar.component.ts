@@ -18,4 +18,6 @@ export class SearchBarComponent implements OnInit {
 }
 //to pass info from Child to Parent
 //import Output and EventEmitter
-//use generic typescript <type>
+//use generic typescript <type> and create an new instance to export
+//call the instance and emit it in the method
+//then go to the parernt component and add the event property to the selector
