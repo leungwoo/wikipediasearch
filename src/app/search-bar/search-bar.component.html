@@ -1,4 +1,11 @@
 <!--$event it to stop the reloading of the page to see the console log-->
-<form (submit)="onFormSubmit($event)">
-  <input #userInput (input)="term = userInput.value" />
-</form>
+<div class="box">
+  <form (submit)="onFormSubmit($event)">
+    <input
+      class="input"
+      placeholder="enter search"
+      #userInput
+      (input)="term = userInput.value"
+    />
+  </form>
+</div>
