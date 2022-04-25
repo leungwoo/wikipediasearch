@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Search } from '../interfaces/wikipediaresponse';
 
 @Component({
   selector: 'app-page-list',
@@ -6,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./page-list.component.css'],
 })
 export class PageListComponent implements OnInit {
-  @Input() pages: any = [];
+  @Input() pages: Search[] = [];
+
   constructor() {}
 
   ngOnInit(): void {}
